@@ -20,7 +20,7 @@
 </section></div><footer>Progress is saved to <strong>MongoDB</strong> via the local API server and synced across all devices on the same server. Export progress to keep a backup. The curriculum is intentionally broad; the number of days is not a deadline. Mastery takes as long as the evidence says it takes.</footer></main>
 <script>
 // ── MongoDB API helpers ────────────────────────────────────────────────────
-const API_BASE='http://localhost:3001';
+const API_BASE=''; // relative URL — works locally (served by server.js) and in production
 let _saveTimer=null;
 // Debounced save: waits 600ms after last change before sending to server.
 function scheduleSave(){
